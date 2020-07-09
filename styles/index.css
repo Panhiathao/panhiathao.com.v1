@@ -1,3 +1,47 @@
+body {
+    background-color: #a28089;
+    color: white;
+}
+
 header {
-    background-color: palevioletred;
+    margin: 0;
+    border-color: #ffa8b6;
+}
+nav {
+    background-color: #ffa8b6;
+    text-align: right;
+    padding: 10vw;
+    overflow: hidden;
+}
+
+.content {
+    padding: 15px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+#projects {
+    background-color: rgb(197, 194, 194);
+}
+
+.familyimg, #pimg {
+    width: 25vw;
+}
+
+#pimg {
+    width: 45vw;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
