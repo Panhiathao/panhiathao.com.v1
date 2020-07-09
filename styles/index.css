@@ -1,20 +1,22 @@
 body {
     background-color: #a28089;
     color: white;
+    width: 80vw;
 }
 
 header {
     margin: 0;
     border-color: #ffa8b6;
+    position: fixed;
+    width: 100%;
 }
 nav {
     background-color: #ffa8b6;
     text-align: right;
-    padding: 10vw;
-    overflow: hidden;
+    padding: 2vw;
 }
 
-.content {
+/*.content {
     padding: 15px;
 }
 
@@ -26,10 +28,12 @@ nav {
 
 .sticky + .content {
     padding-top: 60px;
-}
+}*/
 
 #projects {
-    background-color: rgb(197, 194, 194);
+    background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
 }
 
 .familyimg, #pimg {
@@ -44,4 +48,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #ffa8b6;
+    margin: 0;
+    padding: 0;
 }
