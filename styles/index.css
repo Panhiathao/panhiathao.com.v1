@@ -1,20 +1,28 @@
 body {
     background-color: #a28089;
     color: white;
-    width: 80vw;
+    
 }
 
 header {
-    margin: 0;
-    border-color: #ffa8b6;
-    position: fixed;
-    width: 100%;
-}
-nav {
     background-color: #ffa8b6;
+    position: fixed;
+    width: 80%;
+    padding-left: 10%;
     text-align: right;
-    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
 }
+/* nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+} */
+
 
 /*.content {
     padding: 15px;
@@ -30,11 +38,7 @@ nav {
     padding-top: 60px;
 }*/
 
-#projects {
-    background-color: whitesmoke;
-    padding: 0;
-    margin: 0;
-}
+
 
 .familyimg, #pimg {
     width: 25vw;
@@ -52,3 +56,4 @@ footer {
     margin: 0;
     padding: 0;
 }
+
