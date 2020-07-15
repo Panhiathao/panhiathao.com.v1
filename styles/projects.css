@@ -1,0 +1,33 @@
+body {
+    background-color: #a28089;
+    color: white;
+    padding-left: 10vw;
+    
+}
+
+header, footer {
+    background-color: #ffa8b6;
+    font-size: 1.5em;
+    position: fixed;
+    width: 80%;
+    padding-left: 10%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 1vw;
+
+}
+
+nav {
+    padding-right: 5vw;
+}
+
+
+
+
+
+footer {
+    text-align: center;
+
+}
