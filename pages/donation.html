@@ -3,6 +3,7 @@
         <title>Special thanks</title>
         <link rel="stylesheet" href="../styles/donation.css" />
         <script src="https://js.stripe.com/v3"></script>
+        
     </head>
     <body>
         <header id="navbar">
@@ -25,16 +26,18 @@
                 <article>
                     <label>Name on card:</label>
                     <input id="name" type="text" placeholder="Name on card"/>
-                    <label>Card Numbers:</label>
+                    <label>Card numbers:</label>
                     <input id="cardnumber" type="number" placeholder="Card numbers" />
                     <label>Expiration date:</label>
                     <input id="date" type="date" placeholder="Expiration Date" />
-                    <label>Security Code:</label>
+                    <label>Security code:</label>
                     <input id="securitycode" type="number" placeholder="Security code" />
                 </article>
-                <article>
-                    <button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em" id="checkout-button-price_1H4IgfHkRWTAGSa4sNLa0S2v" role="link" type="button">
-                    Checkout</button>
+                <article class="donationbutton">
+                    <button id="checkout-button-price_1H4IgfHkRWTAGSa4sNLa0S2v" role="link" type="button">
+                    One Time Donation</button>
+                    <button id="checkout-button-price_1H52LSHkRWTAGSa4iJPlS8lT" role="link" type="button">Recurrring Monthly One Dollar Donation</button>
+                    <button id="checkout-button-price_1H5KccHkRWTAGSa4E9eKYNrU" role="link" type="button">Annual Donation Of $10</button>
 
 <div id="error-message"></div>
                 </article>

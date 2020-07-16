@@ -31,17 +31,25 @@ footer {
     text-align: center;
 
 }
+.specialthanks {
+    display: flex;
+    flex-direction: column;   
+}
+
+.specialthanks img {
+    width: 45vw;
+    justify-content: center;
+    align-items: center;
+}
 
 
-
-
-.familyimg, #pimg {
-    width: 25vw;
+/* .familyimg, #pimg {
+    width: 20vw;
 }
 
 #pimg {
     width: 45vw;
-}
+} */
 
 footer {
     text-align: center;
