@@ -1,23 +1,25 @@
-function hello() {
-    alert("hi I am Pa Nhia")
-}
 
-/*
+var firebaseConfig = {
+    apiKey: "AIzaSyBKejGRdXVpLJqwWI0aP4HYHfwsceFfARE",
+    authDomain: "panhia-2040e.firebaseapp.com",
+    databaseURL: "https://panhia-2040e.firebaseio.com",
+    projectId: "panhia-2040e",
+    storageBucket: "panhia-2040e.appspot.com",
+    messagingSenderId: "1069882940906",
+    appId: "1:1069882940906:web:a81e965ffada6e4a8c2693",
+    measurementId: "G-VS2DWZ35TZ"
+  };
 
-window.onscroll = function() {barSticky()}
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
 
 
-function barSticky() {
 
-    const navbar = document.getElementById("navbar")
 
-    const sticky = navbar.offsetTop;
 
-    if(window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-    }else {
-        navbar.classList.remove("sticky")
-    }
-}
 
-*/
+  //////////////////////////////////////////////////////
+
+  // function hello() {
+//     alert("hi I am Pa Nhia")
+// }

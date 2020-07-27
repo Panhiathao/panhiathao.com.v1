@@ -1,31 +1,42 @@
 body {
     background-color: #a28089;
-    color: white;
-    padding-left: 10vw;
+    background-image: url(/images/Lifeisabeach.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
     
+   
+    color: white;
+    padding-left: 10vw;   
 }
 
-header, footer {
+header {
     background-color: #ffa8b6;
     font-size: 1.5em;
-    position: fixed;
+    position: sticky;
+    top:0;
     width: 80%;
+    
     padding-left: 10%;
+    padding: 2.5%;
     text-align: right;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    padding-left: 1vw;
-
+    align-content: center;   
 }
 
-nav {
+main {
+    padding-top: 7vh;
+}
+
+/* nav {
     padding-right: 5vw;
+    position: sticky;
+    
+} */
+
+img {
+    width: 75%;
 }
-
-
-
-
 
 footer {
     text-align: center;
