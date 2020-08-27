@@ -14,7 +14,7 @@
      // Instead use one of the strategies described in
      // https://stripe.com/docs/payments/checkout/fulfillment
      successUrl: 'https://panhiathao.com/pages/thankyou.html',
-     cancelUrl: 'https://panhiathao.com/pages/cancel.html'
+     cancelUrl: 'https://panhiathao.com/pages/donation.html'
    })
    .then(function (result) {
      if (result.error) {
@@ -55,7 +55,7 @@
       }
     });
   });
-})();
+})(); 
 
 
 (function() {
