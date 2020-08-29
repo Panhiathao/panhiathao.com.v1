@@ -1,4 +1,4 @@
-const template = document.createElements("template");
+const template = document.createElement("template");
 template.innerHTML = `
     <style>
         nav {
@@ -6,14 +6,14 @@ template.innerHTML = `
         }
     </style>
     <nav >
-        <a href="../index.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
         <a href="donation.html">Donation</a>
         <a href="specialthanks.html">Special Thanks</a>
     </nav>
 `
-export class PtFooter extends HTMLElement {
+export class PtNav extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({mode: "open"});

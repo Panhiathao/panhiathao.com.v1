@@ -1,3 +1,8 @@
+import {PtFooter} from "./components/pt-footer.mjs"
+customElements.define("pt-footer", PtFooter)
+
+import {PtNav} from "./components/pt-nav.mjs"
+customElements.define("pt-nav", PtNav)
 
 var firebaseConfig = {
     apiKey: "AIzaSyBKejGRdXVpLJqwWI0aP4HYHfwsceFfARE",
@@ -10,8 +15,8 @@ var firebaseConfig = {
     measurementId: "G-VS2DWZ35TZ"
   };
 
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+  //firebase.initializeApp(firebaseConfig);
+  //firebase.analytics();
 
 
 
@@ -23,3 +28,6 @@ var firebaseConfig = {
   // function hello() {
 //     alert("hi I am Pa Nhia")
 // }
+
+////////////////////////////////
+

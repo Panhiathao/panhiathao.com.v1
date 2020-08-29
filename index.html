@@ -2,17 +2,11 @@
     <head>
         <title>Home</title>
         <link rel="stylesheet" href="styles/index.css" />
-        <script src="scripts/index.js"></script>
+        <script src="scripts/index.js" type="module"></script>
     </head>
     <body>
         <header id="navbar">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="pages/about.html">About</a>
-                <a href="pages/projects.html">Projects</a>
-                <a href="pages/donation.html">Donation</a>
-                <a href="pages/specialthanks.html">Special Thanks</a>
-            </nav>
+            <pt-nav></pt-nav>
         </header>
         <main>
             <section id="home">
@@ -25,6 +19,8 @@
                 
             </section>
         </main>
-        <footer>Silicon Wat LLC &copy; 2020</footer>
+        <footer>
+            <pt-footer></pt-footer>
+        </footer>
     </body>
 </html>
