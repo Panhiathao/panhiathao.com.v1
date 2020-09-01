@@ -31,3 +31,8 @@ var firebaseConfig = {
 
 ////////////////////////////////
 
+
+function goToAboutMe() {
+  document.querySelector("a").href = "about.html";
+}
+
