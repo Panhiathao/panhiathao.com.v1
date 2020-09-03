@@ -42,3 +42,7 @@ footer {
     text-align: center;
 
 }
+
+button {
+    animation: toabout 2.5s, 5s, 1s timing-function delay iteration-count direction fill-mode;
+}
