@@ -8,6 +8,7 @@ template.innerHTML = `
     <nav >
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
+        <a href="journal.html">Journal Enteries</a>
         <a href="projects.html">Projects</a>
         <a href="donation.html">Donation</a>
         <a href="specialthanks.html">Special Thanks</a>
