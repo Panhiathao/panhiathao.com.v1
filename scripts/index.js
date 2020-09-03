@@ -4,6 +4,9 @@ customElements.define("pt-footer", PtFooter)
 import {PtNav} from "./components/pt-nav.mjs"
 customElements.define("pt-nav", PtNav)
 
+import {swCountDown} from "./sw-countdown.mjs"
+customElements.define("sw-countdown", SwCountDown)
+
 var firebaseConfig = {
     apiKey: "AIzaSyBKejGRdXVpLJqwWI0aP4HYHfwsceFfARE",
     authDomain: "panhia-2040e.firebaseapp.com",
@@ -30,6 +33,7 @@ var firebaseConfig = {
 // }
 
 ////////////////////////////////
+
 
 
 function goToAboutMe() {

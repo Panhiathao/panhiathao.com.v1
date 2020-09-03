@@ -3,17 +3,36 @@
         <title>Home</title>
         <link rel="stylesheet" href="styles/index.css" />
         <script src="scripts/index.js" type="module"></script>
+        <script src="https://library.siliconwat.com" type="module"></script>
     </head>
     <body>
         <header id="navbar">
             <pt-nav></pt-nav>
         </header>
         <main>
+            <section>
+                <sw-countdown>
+                    <h3>
+                        <span>1</span>
+                        <span>day</span> 
+                        left
+                    </h3>
+                    <h4>
+                        <span>0</span>
+                        :
+                        <span>0</span>
+                        :
+                        <span>3</span>
+                    </h4>
+                </sw-countdown>
+            </section>
             <section id="home">
                 <h1>Welcome.</h1>
                 <h2>My name is</h2>
                 <h1>Pa Nhia.</h1>
-                <button onclick="goToAboutMe()">Get to know me!</button>
+                <form action="about.html">
+                    <button type="submit">Click to Read about <Menu:toolbar></Menu:toolbar></button>
+                </form>
             </section>
             <section>
                 

@@ -3,3 +3,6 @@ customElements.define("pt-footer", PtFooter)
 
 import {PtNav} from "./components/pt-nav.mjs"
 customElements.define("pt-nav", PtNav)
+
+import {SwTimer} from "./sw-timer.mjs"
+customElements.define("sw-timer", SwTimer)
