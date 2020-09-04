@@ -2,6 +2,8 @@ body {
     background-color: #a28089;
     color: white;
     padding-left: 10vw;
+    font-family: comic sans, cursive;
+    font-size: .75em;
     
 }
 
@@ -23,9 +25,9 @@ nav {
     padding-right: 5vw;
 }
 
-
-
-
+main {
+    padding-top: 10vh;
+}
 
 footer {
     text-align: center;
