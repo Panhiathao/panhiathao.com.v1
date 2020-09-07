@@ -10,7 +10,16 @@ customElements.define("sw-countdown", SwCountDown);
 const countdown = document.querySelector("sw-countdown");
 countdown.addEventListener("done", () => {
   document.querySelector("img").src = "https://s1.uploadstars.com/api/files/photos/2019/12/09/157585941060e937_l.gif"
-})
+});
+
+import {HbLogout} from "https://library.siliconwat.com/components/hb-logout.mjs"
+customElements.define("hb-logout", HbLogout);
+
+import {HbLogin} from "https://library.siliconwat.com/components/hb-login.mjs"
+customElements.define("hb-login", HbLogin);
+
+import {HbSignup} from "https://Library.siliconwatcom/components/hb-signup.mjs"
+customElements.define("hb-signup", HbSignup);
 
 
 var firebaseConfig = {
@@ -24,7 +33,7 @@ var firebaseConfig = {
     measurementId: "G-VS2DWZ35TZ"
   };
 
-  //firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(firebaseConfig);
   //firebase.analytics();
 
 
