@@ -1,19 +1,24 @@
 
 <html>
     <head>
-        <link rel="stylesheet" href="styles/logout.css">
+        <link rel="stylesheet" href="styles/signup.css">
         <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
-        <script type="module" src="scripts/logout.js"></script>
+        <script type="module" src="scripts/signup.js"></script>
     </head>
     <body>
         <section>
-            <hb-logout>
-                <button>Logout</button>
-            </hb-logout>
+            <hb-signup>
+                <form>
+                    <input type="email" name="email" placeholder="Email"/>
+                    <input type="password" name="password" placeholder="Password"/>
+                    <button type="submit">sign up</button>
+                </form>
+                <p></p>
+            </hb-signup>
         </section>
 
     </body>

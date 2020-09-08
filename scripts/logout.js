@@ -1,5 +1,5 @@
-import {HbLogin} from "https://library.siliconwat.com/componenets/hb-login.mjs"
-customElements.define("hb-login", HbLogin);
+import {HbLogout} from "https://library.siliconwat.com/components/hb-logout.mjs";
+customElements.define("hb-logout", HbLogout);
 
 
 var firebaseConfig = {
@@ -24,11 +24,6 @@ var firebaseConfig = {
 
 ///////
 
-  const signup = document.querySelector("hb-signup");
-  signup.addEventListener("success", () => console.log("signed up"))
-
-  const login = document.querySelector("hb-login")
-  login.addEventListener("success", () => console.log("logged in"))
 
   const logout = document.querySelector("hb-logout")
   logout.addEventListener("success", () => console.log("logged out"))

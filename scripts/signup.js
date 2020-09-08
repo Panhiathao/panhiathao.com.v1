@@ -1,5 +1,5 @@
-import {HbLogout} from "https://library.siliconwat.com/components/hb-logout";
-customElements.define("hb-logout", HbLogout);
+import {HbSignup} from "https://library.siliconwat.com/components/hb-signup.mjs";
+customElements.define("hb-signup", HbSignup);
 
 
 var firebaseConfig = {
@@ -14,6 +14,7 @@ var firebaseConfig = {
   };
 
   firebase.initializeApp(firebaseConfig);
+  
   firebase.auth().onAuthStateChanged(user => {
 	if (user) {
 		console.log(user.uid, user.email)
@@ -21,14 +22,3 @@ var firebaseConfig = {
 		console.log("not logged in")
 	}
 })
-
-///////
-
-  const signup = document.querySelector("hb-signup");
-  signup.addEventListener("success", () => console.log("signed up"))
-
-  const login = document.querySelector("hb-login")
-  login.addEventListener("success", () => console.log("logged in"))
-
-  const logout = document.querySelector("hb-logout")
-  logout.addEventListener("success", () => console.log("logged out"))
