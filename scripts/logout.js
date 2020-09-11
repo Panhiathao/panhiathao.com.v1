@@ -27,3 +27,4 @@ var firebaseConfig = {
 
   const logout = document.querySelector("hb-logout")
   logout.addEventListener("success", () => console.log("logged out"))
+  

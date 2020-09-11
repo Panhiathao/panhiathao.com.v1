@@ -2,9 +2,9 @@ import {HbSignup} from "https://library.siliconwat.com/components/hb-signup.mjs"
 customElements.define("hb-signup", HbSignup);
 
 const signup = document.querySelector("hb-signup");
-signup.addEventListener("submit", () => document.querySelector("img").src = "https://blog.eshop-rychle.cz/wp-content/uploads/2016/11/loading-bar-1.gif")
-signup.addEventListener("success", () => document.querySelector("img").src = "https://blog.eshop-rychle.cz/wp-content/uploads/2016/11/loading-bar-1.gif")
-signup.addEventListener("done", () => document.querySelector("img").src = "https://blog.eshop-rychle.cz/wp-content/uploads/2016/11/loading-bar-1.gif")
+signup.addEventListener("submit", () => console.log("spin") )
+signup.addEventListener("success", () => console.log("spin success") )
+signup.addEventListener("done", () => console.log("spinout") )
 
 
 var firebaseConfig = {

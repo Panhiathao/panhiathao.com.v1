@@ -25,5 +25,7 @@ var firebaseConfig = {
 ///////
 
   const login = document.querySelector("hb-login")
-  login.addEventListener("success", () => console.log("logged in"))
-
+  login.addEventListener("submit", () => console.log("spin in"))
+  login.addEventListener("login success", ()=> console.log("loadingimage"))
+  login.addEventListener("click", () => console.log("loadingimage"))
+  login.addEventListener("forgot pass success", () => console.log("spinout"))
