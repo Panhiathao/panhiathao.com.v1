@@ -1,6 +1,11 @@
 import {HbLogin} from "https://library.siliconwat.com/components/hb-login.mjs"
 customElements.define("hb-login", HbLogin);
 
+const login = document.querySelector("hb-login")
+login.addEventListener("success", () => console.log("logged in and Hi"))
+login.addEventListener("success", () => console.log("logged out"))
+login.addEventListener("success", event => console.log("success:", event.detail.type))
+
 
 var firebaseConfig = {
     apiKey: "AIzaSyBKejGRdXVpLJqwWI0aP4HYHfwsceFfARE",
@@ -23,7 +28,4 @@ var firebaseConfig = {
 })
 
 ///////
-
-  const login = document.querySelector("hb-login")
-  login.addEventListener("success", () => console.log("logged in"))
 

@@ -1,6 +1,16 @@
 import {HbLogout} from "https://library.siliconwat.com/components/hb-logout.mjs";
 customElements.define("hb-logout", HbLogout);
 
+const logout = document.querySelector("hb-logout")
+logout.addEventListener("success", () => {
+  const img = document.querySelector("img")
+  img.src = "http://3.bp.blogspot.com/-TaxA8nFoMZI/UcF3eBfZ76I/AAAAAAAAkDM/DfQHzi4WAvM/s1600/funny-cat-gifs-055-004.gif"
+})
+  
+logout.addEventListener("done", () => {
+  const img = document.querySelector("img")
+  img.src = ""
+} )
 
 var firebaseConfig = {
     apiKey: "AIzaSyBKejGRdXVpLJqwWI0aP4HYHfwsceFfARE",
@@ -25,5 +35,4 @@ var firebaseConfig = {
 ///////
 
 
-  const logout = document.querySelector("hb-logout")
-  logout.addEventListener("success", () => console.log("logged out"))
+  

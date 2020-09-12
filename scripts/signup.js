@@ -1,10 +1,15 @@
 import {HbSignup} from "https://library.siliconwat.com/components/hb-signup.mjs";
 customElements.define("hb-signup", HbSignup);
 
+const img = document.querySelector("img")
+
+
 const signup = document.querySelector("hb-signup");
-signup.addEventListener("submit", () => document.querySelector("img").src = "https://blog.eshop-rychle.cz/wp-content/uploads/2016/11/loading-bar-1.gif")
-signup.addEventListener("success", () => document.querySelector("img").src = "https://blog.eshop-rychle.cz/wp-content/uploads/2016/11/loading-bar-1.gif")
-signup.addEventListener("done", () => document.querySelector("img").src = "https://blog.eshop-rychle.cz/wp-content/uploads/2016/11/loading-bar-1.gif")
+signup.addEventListener("submit", () => {
+  img.src = "http://3.bp.blogspot.com/-TaxA8nFoMZI/UcF3eBfZ76I/AAAAAAAAkDM/DfQHzi4WAvM/s1600/funny-cat-gifs-055-004.gif"
+})
+signup.addEventListener("success", () => img.src = "http://3.bp.blogspot.com/-TaxA8nFoMZI/UcF3eBfZ76I/AAAAAAAAkDM/DfQHzi4WAvM/s1600/funny-cat-gifs-055-004.gif" )
+signup.addEventListener("done", () => img.src = "http://3.bp.blogspot.com/-TaxA8nFoMZI/UcF3eBfZ76I/AAAAAAAAkDM/DfQHzi4WAvM/s1600/funny-cat-gifs-055-004.gif")
 
 
 var firebaseConfig = {
@@ -27,3 +32,11 @@ var firebaseConfig = {
 		console.log("not logged in")
 	}
 })
+
+//  const signup = document.querySelector("hb-signup");
+//   signup.addEventListener("success", () => console.log("successfully signed up"))
+//   signup.addEventListener("success", () => console.log("signed up"))
+
+//   signup.addEventListener("submit", () => console.log("spinner on"))
+//   signup.addEventListener("success", () => console.log("signed up"))
+//   signup.addEventListener("done", () => console.log("spinner off"))
