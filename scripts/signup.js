@@ -5,11 +5,17 @@ const img = document.querySelector("img")
 
 
 const signup = document.querySelector("hb-signup");
+<<<<<<< HEAD
 signup.addEventListener("submit", () => {
   img.src = "http://3.bp.blogspot.com/-TaxA8nFoMZI/UcF3eBfZ76I/AAAAAAAAkDM/DfQHzi4WAvM/s1600/funny-cat-gifs-055-004.gif"
 })
 signup.addEventListener("success", () => img.src = "http://3.bp.blogspot.com/-TaxA8nFoMZI/UcF3eBfZ76I/AAAAAAAAkDM/DfQHzi4WAvM/s1600/funny-cat-gifs-055-004.gif" )
 signup.addEventListener("done", () => img.src = "http://3.bp.blogspot.com/-TaxA8nFoMZI/UcF3eBfZ76I/AAAAAAAAkDM/DfQHzi4WAvM/s1600/funny-cat-gifs-055-004.gif")
+=======
+signup.addEventListener("submit", () => console.log("spin") )
+signup.addEventListener("success", () => console.log("spin success") )
+signup.addEventListener("done", () => console.log("spinout") )
+>>>>>>> 97c9351137e5f63acb19a603fa1930638f5bddba
 
 
 var firebaseConfig = {
