@@ -1,5 +1,13 @@
 <html>
-    <head></head>
+    <head>
+        <link rel="stylesheet" href="styles/user.css">
+        <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+        <script type="module" src="scripts/user.js"></script>
+    </head>
     <body>
         <section>
             <pt-nav></pt-nav>
@@ -16,13 +24,13 @@
         <section>
             <hb-account-email>
                 <form>
-                    <label >Change Email:</label>
-                    <input type="email" placeholder="New Email" />
-                    <input type="password" placeholder="Current Password" />
+                    <label>Change Email:</label>
+                    <input name="newemail" type="email" placeholder="New Email" />
+                    <input name="password" type="password" placeholder="Current Password" />
                     <button type="submit">Submit</button>
                 </form>
                 <p></p>
-                <img >
+                <img />
             </hb-account-email>
         </section>
         <section>

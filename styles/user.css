@@ -37,3 +37,7 @@ footer {
     text-align: center;
 
 }
+
+hb-account-verify input {
+    border: 2px solid blue;
+}
