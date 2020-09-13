@@ -29,32 +29,41 @@ import {HbAccountEmail} from "https://library.siliconwat.com/components/hb-accou
 
 
 
+function imgdone() {
+  img.src = "";
+}
+
 const img = document.querySelector("img");
 const spinner = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif"
 
 const accountVerify = document.querySelector("hb-account-verify")
-    accountVerify.addEventListener("success", () => {
+  accountVerify.addEventListener("success", () => {
     console.log("verify email sent")
     img.src = spinner;
   })
+  accountVerify.addEventListener("done", () => imgdone)
+
 
 const accountUsername = document.querySelector("hb-account-username");
   accountUsername.addEventListener("submit", () => {
     console.log("Username change success")
     img.src = spinner;
   })
+  accountUsername.addEventListener("done", () => imgdone)
 
 const accountPassword = document.querySelector("hb-account-password");
-    accountPassword.addEventListener("success", () => {
+    accountPassword.addEventListener("submit", () => {
       console.log("Success")
       img.src = spinner;
     })
+    accountPassword.addEventListener("done", () => imgdone)
 
 const accountEmail = document.querySelector("hb-account-email")
-    accountEmail.addEventListener("success", () => {
+  accountEmail.addEventListener("submit", () => {
     console.log("email has been updated")
     img.src = spinner;
     })
+    accountEmail.addEventListener("done", () => imgdone)
 
 // const delete = document.querySelector("hb-delete");
 // delete.addEventListener("success", () => {
