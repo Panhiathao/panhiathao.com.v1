@@ -52,14 +52,14 @@ const accountUsername = document.querySelector("hb-account-username");
   accountUsername.addEventListener("done", () => imgdone)
 
 const accountPassword = document.querySelector("hb-account-password");
-    accountPassword.addEventListener("submit", () => {
+    accountPassword.addEventListener("success", () => {
       console.log("Success")
       img.src = spinner;
     })
     accountPassword.addEventListener("done", () => imgdone)
 
 const accountEmail = document.querySelector("hb-account-email")
-  accountEmail.addEventListener("submit", () => {
+  accountEmail.addEventListener("success", () => {
     console.log("email has been updated")
     img.src = spinner;
     })
