@@ -13,24 +13,56 @@ var firebaseConfig = {
 
   firebase.initializeApp(firebaseConfig);
 import {HbAccountVerify} from "https://library.siliconwat.com/components/hb-account.mjs"
-    customElements.define("hb-account-verify", HbAccountVerify)
+  customElements.define("hb-account-verify", HbAccountVerify);
+
+import {HbAccountUsername} from "https://library.siliconwat.com/components/hb-account.mjs"
+  customElements.define("hb-account-username", HbAccountUsername);
+
+import {HbAccountPassword} from "https://library.siliconwat.com/components/hb-account.mjs"
+  customElements.define("hb-account-password", HbAccountPassword);
 
 import {HbAccountEmail} from "https://library.siliconwat.com/components/hb-account.mjs"
-    customElements.define("hb-account-email", HbAccountEmail)
+  customElements.define("hb-account-email", HbAccountEmail);
+
+// import {HbAccountDelete} from "https://library.siliconwat.com/components/hb-account.mjs"
+//   customElements.define("hb-account-delete", HbAccountDelete)
+
+
 
 const img = document.querySelector("img");
+const spinner = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif"
 
 const accountVerify = document.querySelector("hb-account-verify")
     accountVerify.addEventListener("success", () => {
     console.log("verify email sent")
-    img.src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif"
+    img.src = spinner;
   })
+
+const accountUsername = document.querySelector("hb-account-username");
+  accountUsername.addEventListener("submit", () => {
+    console.log("Username change success")
+    img.src = spinner;
+  })
+
+const accountPassword = document.querySelector("hb-account-password");
+    accountPassword.addEventListener("success", () => {
+      console.log("Success")
+      img.src = spinner;
+    })
 
 const accountEmail = document.querySelector("hb-account-email")
     accountEmail.addEventListener("success", () => {
     console.log("email has been updated")
-    img.src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif"
+    img.src = spinner;
     })
+
+// const delete = document.querySelector("hb-delete");
+// delete.addEventListener("success", () => {
+//   console.log("success");
+//   img.src = spinner;
+// })
+
+
 
 
     
