@@ -1,3 +1,5 @@
+
+
 body {
     background-color: #a28089;
     color: white;
@@ -38,6 +40,21 @@ footer {
 
 }
 
-hb-account-verify input {
-    border: 2px solid blue;
+hb-account-verify button, hb-account-email button, hb-account-password button, hb-account-username button, hb-account-delete button  {
+    background-color: #ffa8b6;
+    color: #fff;
+    text-shadow: none;
+    background-image: none;
+    cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    outline: 0;
+    border: none;
+    vertical-align: baseline;
+    margin: 0 .25em 0 0;
+    padding: .78571429em 1.5em .78571429em;
+    font-style: normal;
+    text-align: center;
 }
+
+ 
