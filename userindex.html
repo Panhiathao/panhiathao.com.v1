@@ -6,6 +6,7 @@
         <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+        <script src="https://js.stripe.com/v3"></script>
         <script type="module" src="scripts/userindex.js"></script>
     </head>
     <body>
@@ -20,7 +21,7 @@
             <img name="loading" />
         </section>
         <section>
-            <hb-checkout stripte-pk-live="" stripe-api-id="price_1HRlRJIqtcktYEN8x83fbyxU">
+            <hb-checkout stripte-pk-live="price_1HRlRJIqtcktYEN8x83fbyxU" stripe-api-id="price_1HRlRJIqtcktYEN8x83fbyxU">
                 <form>
                     <label>Item 1: ...</label>
                     <button role="link" type="submit">Checkout</button>
