@@ -22,3 +22,7 @@ var firebaseConfig = {
         console.log(event.detail.type, event.detail.url, "success")
         loading.src = spinner;
     } )
+
+    import {HbCheckout} from "https://library.siliconwat.com/components/hb-checkout";
+      customElements.define("hb-checkout", HbCheckout)
+      const 
