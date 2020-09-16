@@ -23,6 +23,13 @@ var firebaseConfig = {
         loading.src = spinner;
     } )
 
-    import {HbCheckout} from "https://library.siliconwat.com/components/hb-checkout";
+    import {HbCheckout} from "https://library.siliconwat.com/components/hb-checkout.mjs";
       customElements.define("hb-checkout", HbCheckout)
-      const 
+      const checkout = document.querySelector("hb-checkout")
+      const img = document.querySelector("img");
+    
+
+      checkout.addEventListener("success", () => {
+        console.log("checkout successful");
+        img.src = spinner;
+      })
