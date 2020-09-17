@@ -23,6 +23,15 @@ var firebaseConfig = {
         loading.src = spinner;
     } )
 
-    import {HbCheckout} from "https://library.siliconwat.com/components/hb-checkout";
+    import {HbCheckout} from "https://library.siliconwat.com/components/hb-checkout.mjs";
+
       customElements.define("hb-checkout", HbCheckout)
-      const 
+      // const img = document.querySelector("img")
+      // const spinner = "https://4.bp.blogspot.com/-3S4gx1NKmqU/WkItV8b0E5I/AAAAAAAACT0/0Le6v6SRaZcQn2cttj6uiYVOb0_Jr7WfQCLcBGAs/s1600/loading.gif"
+
+      // const checkout = document.querySelector("hb-checkout");
+      //   checkout.addEventListener("success", () => {
+      //     console.log("success")
+      //     img.src = spinner;
+
+      //   })

@@ -7,7 +7,7 @@ hb-avatar label {
     font-size: 100%;
 
 }
-hb-avatar input, hb-avatar button {
+hb-avatar input, hb-avatar button, hb-checkout button {
     padding: .5em .6em;
     border: 1px solid #ccc;
     box-shadow: inset 0 1 px 3px #ddd;
@@ -22,8 +22,4 @@ hb-avatar input, hb-avatar button {
     margin: 0;
     /* cursor: pointer; */
     background-color: #ffa8b6;
-}
-
-hb-checkout {
-    
 }
