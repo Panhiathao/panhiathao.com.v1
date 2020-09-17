@@ -24,26 +24,14 @@ var firebaseConfig = {
     } )
 
     import {HbCheckout} from "https://library.siliconwat.com/components/hb-checkout.mjs";
-<<<<<<< HEAD
 
       customElements.define("hb-checkout", HbCheckout)
-      // const img = document.querySelector("img")
-      // const spinner = "https://4.bp.blogspot.com/-3S4gx1NKmqU/WkItV8b0E5I/AAAAAAAACT0/0Le6v6SRaZcQn2cttj6uiYVOb0_Jr7WfQCLcBGAs/s1600/loading.gif"
+      const img = document.querySelector("img")
+     
 
-      // const checkout = document.querySelector("hb-checkout");
-      //   checkout.addEventListener("success", () => {
-      //     console.log("success")
-      //     img.src = spinner;
+      const checkout = document.querySelector("hb-checkout");
+        checkout.addEventListener("success", () => {
+          console.log("success")
+          img.src = spinner;
 
-      //   })
-=======
-      customElements.define("hb-checkout", HbCheckout)
-      const checkout = document.querySelector("hb-checkout")
-      const img = document.querySelector("img");
-    
-
-      checkout.addEventListener("success", () => {
-        console.log("checkout successful");
-        img.src = spinner;
-      })
->>>>>>> f831cebadf0dcc1782918b403565b0da2bfa52d0
+        })
