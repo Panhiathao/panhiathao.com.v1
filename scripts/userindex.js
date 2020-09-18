@@ -24,12 +24,14 @@ var firebaseConfig = {
     } )
 
     import {HbCheckout} from "https://library.siliconwat.com/components/hb-checkout.mjs";
-      customElements.define("hb-checkout", HbCheckout)
-      const checkout = document.querySelector("hb-checkout")
-      const img = document.querySelector("img");
-    
 
-      checkout.addEventListener("success", () => {
-        console.log("checkout successful");
-        img.src = spinner;
-      })
+      customElements.define("hb-checkout", HbCheckout)
+      const img = document.querySelector("img")
+     
+
+      const checkout = document.querySelector("hb-checkout");
+        checkout.addEventListener("success", () => {
+          console.log("success")
+          img.src = spinner;
+
+        })
