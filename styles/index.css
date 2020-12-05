@@ -2,74 +2,36 @@
  
 body {
     background-color: #a28089;
-    background-image: url(/images/Lifeisabeach.jpg);
-    background-repeat: no-repeat;
-    background-position: left center;
     color: white;
-    padding-left: 10vw;   
-    font-family: comic sans, cursive;
-    font-size: .75em;
+    height: 100vh;
+    width: 100vw;
+
 }
 
 header {
-    background-color: #ffa8b6;
-    font-size: 1.5em;
-    position: sticky;
-    top:0;
-    width: 80%;
-    padding-left: 10%;
-    padding: 2.5%;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    align-content: center;   
+    border: 1px solid black;
+    height: 10vh;
 }
 
 main {
-    padding-top: 7vh;
-}
+    border: 1px solid black;
+    height: 80vh;
+    display: flex;
 
-#home {
-    padding-right: 15vw;
-    text-align: right;
-}
-
-
-img {
-    width: 75%;
-}
-
-button:hover {
-    border: 4px solid hotpink;
-}
-
-button {
-    border: 3px solid black;
-    background-color: palevioletred;
-    color: black;
-    font-size: 2em;
-    position: relative;
-    animation-name: myaboutanimation;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-delay: 2s;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
-
-}
-
-@keyframes myaboutanimation {
-    0% {background-color: rgb(142, 156, 173);right: 0px; right: 300px; }
-    25% {background-color: lightsteelblue; right: 0px; right: 300px;}
-    75% {background-color: lightskyblue; right: 300px; right: 0px;}
-    100% {background-color: #51e2f5; right: 0px; right: 300px;}
 }
 
 footer {
     text-align: center;
-
 }
 
-button {
-    animation: toabout 2.5s, 5s, 1s timing-function delay iteration-count direction fill-mode;
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 65vh;
+    border: 1px white solid;
+    
 }
